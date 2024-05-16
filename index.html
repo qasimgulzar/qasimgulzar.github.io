@@ -6,6 +6,7 @@
     <title>Muhammad Qasim Gulzar - Full-Stack Developer</title>
     <link rel="icon" type="image/x-icon"
           href="https://media.licdn.com/dms/image/D4D35AQFCek0ziyi3Pg/profile-framedphoto-shrink_400_400/0/1713294230063?e=1716411600&amp;v=beta&amp;t=U5UV2_P2AbAL_DkVcLlkhKyq0q4zkaePbQK0EmWOz6k">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -101,7 +102,42 @@
             display: none;
         }
 
+        .social-icon{
+            list-style: none;
+            display: inline-block;
+            gap: 10px;
+        }
+        .social-icon li{
+            display: inline-block;
+        }
+
+        
+        @media only screen and (max-width: 767px) {
+            body{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .db{
+                display: none;
+            }
+            h1{
+                font-size: 12pt;
+            }
+            h2{
+                font-size: 8pt;
+            }
+            h1,h2{
+                margin: 0;
+            }
+            .contact-other-platform{
+                display: none;
+            }
+        }
+
         @media print {
+            @page {
+                size: A3;
+            }
             body {
                 margin: 10px;
             }
@@ -154,7 +190,7 @@
 <body>
 <header>
     <div class="header-container" style="display: flex;">
-        <div style="flex:.2;">
+        <div style="flex:.2;" class="db">
             <img width="200" style="border-radius: 100px"
                  src="https://media.licdn.com/dms/image/D4D35AQFCek0ziyi3Pg/profile-framedphoto-shrink_400_400/0/1713294230063?e=1716411600&amp;v=beta&amp;t=U5UV2_P2AbAL_DkVcLlkhKyq0q4zkaePbQK0EmWOz6k"
                  height="200" alt="Muhammad Qasim khokhar, #OPEN_TO_WORK" id="ember38"
@@ -173,6 +209,17 @@
                     <li>✉️<small style="margin-left: 5px"><a href="mailto:qasim.khokhar52@gmail.com">qasim.khokhar52@gmail.com</a></small>
                     </li>
                 </ol>
+                <ul class="social-icon screen">
+                    <li>
+                        <a href="https://www.linkedin.com/in/qasimkhokhar" class="fa fa-solid fa-linkedin"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/qasimgulzar?tab=repositories" class="fa fa-solid fa-github"></a>
+                    </li>
+                    <li>
+                        <a href="mailto:qasim.khokhar52@gmail.com" class="fa fa-solid fa-envelope fa-fw"></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
