@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Qasim Gulzar - Full-Stack Developer</title>
-    <link rel="icon" type="image/x-icon" href="https://media.licdn.com/dms/image/D4D35AQFCek0ziyi3Pg/profile-framedphoto-shrink_400_400/0/1713294230063?e=1716411600&amp;v=beta&amp;t=U5UV2_P2AbAL_DkVcLlkhKyq0q4zkaePbQK0EmWOz6k">
+    <link rel="icon" type="image/x-icon"
+          href="https://media.licdn.com/dms/image/D4D35AQFCek0ziyi3Pg/profile-framedphoto-shrink_400_400/0/1713294230063?e=1716411600&amp;v=beta&amp;t=U5UV2_P2AbAL_DkVcLlkhKyq0q4zkaePbQK0EmWOz6k">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,18 +24,18 @@
         }
 
         .container {
-            display: flex;
+            /*display: flex;*/
             justify-content: space-between;
             padding: 5px;
         }
 
-        .left-column {
-            width: 65%; /* Adjusts to allow space between columns */
-        }
+        /*.left-column {*/
+        /*    width: 65%; !* Adjusts to allow space between columns *!*/
+        /*}*/
 
-        .right-column {
-            width: 35%; /* Adjusts to allow space between columns */
-        }
+        /*.right-column {*/
+        /*    width: 35%; !* Adjusts to allow space between columns *!*/
+        /*}*/
 
         section {
             margin-bottom: 20px;
@@ -89,17 +90,70 @@
             background: #525252;
             color: #f4f4f4;
             font-size: 8pt;
-            padding: 2px;
+            padding: 5px 5px;
             border-radius: 5px;
         }
-        #summary p{
+
+        #summary p {
             font-size: 11pt;
+        }
+        .print{
+            display: none;
+        }
+
+        @media print {
+            body {
+                margin: 10px;
+            }
+
+            .techstack-section {
+                display: None;
+            }
+
+            .contact-other-platform {
+                display: None;
+            }
+
+            .header-container {
+                direction: rtl;
+            }
+
+            .contact-info-list li {
+                direction: ltr;
+            }
+
+            .screen {
+                display: none;
+            }
+
+            .skills li {
+                color: white;
+                /*background: none;*/
+                -webkit-print-color-adjust: exact !important;
+            }
+            .print{
+                display: block;
+            }
+            .experience {
+                padding-top: 2px;
+                padding-bottom: 2px;
+                box-shadow: none;
+            }
+            header{
+                padding-bottom: 0;
+            }
+            p{
+                margin-bottom: 2px;
+            }
+            header{
+                color: #525252;
+            }
         }
     </style>
 </head>
 <body>
 <header>
-    <div style="display: flex">
+    <div class="header-container" style="display: flex;">
         <div style="flex:.2;">
             <img width="200" style="border-radius: 100px"
                  src="https://media.licdn.com/dms/image/D4D35AQFCek0ziyi3Pg/profile-framedphoto-shrink_400_400/0/1713294230063?e=1716411600&amp;v=beta&amp;t=U5UV2_P2AbAL_DkVcLlkhKyq0q4zkaePbQK0EmWOz6k"
@@ -114,8 +168,10 @@
                     <li>📍<small style="margin-left: 5px">Lahore, Pakistan</small></li>
                 </ol>
                 <ol class="contact-info-list">
-                    <li>📱<small style="margin-left: 5px"><a href="tel:(+92) 324-4609898">(+92) 324-4609898</a></small></li>
-                    <li>✉️<small style="margin-left: 5px"><a href="mailto:qasim.khokhar52@gmail.com">qasim.khokhar52@gmail.com</a></small></li>
+                    <li>📱<small style="margin-left: 5px"><a href="tel:(+92) 324-4609898">(+92) 324-4609898</a></small>
+                    </li>
+                    <li>✉️<small style="margin-left: 5px"><a href="mailto:qasim.khokhar52@gmail.com">qasim.khokhar52@gmail.com</a></small>
+                    </li>
                 </ol>
             </div>
         </div>
@@ -124,7 +180,13 @@
 </header>
 <div class="container">
     <div class="left-column">
-        <section id="summary">
+        <section class="summary print">
+            <p>Dynamic Full Stack Developer skilled in the software development lifecycle, specializing in data-driven
+                applications and web development with technologies like Django and React. Proven track record in
+                optimizing systems and enhancing team projects in high-pressure environments. Eager to apply analytical
+                skills and innovative approaches to take on challenging roles and drive business success.</p>
+        </section>
+        <section id="summary" class="screen">
             <h2><small style="font-size: 12pt">🌐 Full Stack Developer | 🚀 Technology Enthusiast
                 Solver</small>
             </h2>
@@ -144,7 +206,6 @@
                 opportunities to
                 make a tangible impact. 🎯</p>
         </section>
-        <hr class="dashed">
 
         <section id="education">
             <h2><small style="font-size: 12pt">Education</small></h2>
@@ -154,45 +215,185 @@
             </article>
         </section>
         <hr class="dashed">
-        <h3 id="find-me-elsewhere-">Find me elsewhere 🌎<a class="anchorjs-link " href="#find-me-elsewhere-"
-                                                          aria-label="Anchor" data-anchorjs-icon=""
-                                                          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
-        </h3>
-        <table style="width: 100%">
-            <tbody>
-            <tr>
-                <td style="border: 0">
-                    <a href="https://www.linkedin.com/in/qasimkhokhar" target="_blank">
-                        <img
-                                src="https://img.shields.io/badge/qasim_gulzar-black?&amp;style=for-the-badge&amp;logo=linkedin&amp;logoColor=white"
-                                alt="LinkedIn" style="margin-bottom: 5px;">
-                    </a>
-                </td>
-                <td style="border: 0">
-                    <a href="https://github.com/qasimgulzar?tab=repositories" target="_blank">
-                        <img
-                                src="https://img.shields.io/badge/qasim_gulzar-black?&amp;style=for-the-badge&amp;logo=github&amp;logoColor=white"
-                                alt="Github" style="margin-bottom: 5px;">
-                    </a>
-                </td>
-                <td style="border: 0">
-                    <a href="https://matching.turing.com/developer-resume-preview/7784d950d1dfd8cd4dfd356b8bc3d206bbe73470c421">
-                        <img
-                                src="https://img.shields.io/badge/qasim_gulzar-black?&amp;style=for-the-badge&amp;logo=freelancer&amp;logoColor=white"
-                                alt="Turing" style="margin-bottom: 5px;">
-                    </a>
-                </td>
-                <td style="border: 0">
-                    <a href="mailto:qasim.khokhar52@gmail.com">
-                        <img
-                                src="https://img.shields.io/badge/qasim_gulzar-black?&amp;style=for-the-badge&amp;logo=gmail&amp;logoColor=white"
-                                alt="Email" style="margin-bottom: 5px;">
-                    </a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-        <section id="projects">
+
+        <div class="right-column">
+            <section id="experience">
+                <h2><small style="font-size: 12pt">Experience</small></h2>
+                <article class="experience">
+                    <h3>Full Stack Developer at Arbisoft</h3>
+                    <p>2018 - Present | Lahore, Pakistan</p>
+                    <p>
+                        <small>
+                            As a <strong>Full-Stack Developer</strong> at <em>Arbisoft</em>, I am committed to
+                            accurately
+                            fulfilling
+                            client requests by developing and delivering robust solutions across a diverse technology
+                            stack.
+                            My
+                            expertise
+                            spans multiple programming languages including <strong>Python, JavaScript, TypeScript, and
+                            Go</strong>,
+                            enabling me to build scalable and efficient applications.
+                        </small>
+                    </p>
+                    <p>
+                        <small>
+                            I have extensive experience with a variety of frameworks such as <strong>Django, Flask,
+                            FastAPI,
+                            and
+                            Express.js</strong>, which allows me to adapt to different project requirements effectively.
+                            My
+                            role
+                            involves
+                            leveraging these technologies to create high-quality software that meets the dynamic needs
+                            of
+                            our clients,
+                            ensuring optimal performance and user experience.
+                        </small>
+                    </p>
+                    <ul class="skills">
+                        <li>Python</li>
+                        <li>Openedx</li>
+                        <li>Django</li>
+                        <li>Flask</li>
+                        <li>FastApi</li>
+                        <li>Pandas</li>
+                        <li>Numpy</li>
+                        <li>Sci-Kit Learn</li>
+                        <li>React</li>
+                        <li>Javascript</li>
+                        <li>Node.js</li>
+                        <li>MySql</li>
+                        <li>Postgresql</li>
+                        <li>MongoDB</li>
+                        <li>Redis</li>
+                    </ul>
+                </article>
+                <article class="experience">
+                    <h3>Full Stack Developer at Marketerhire</h3>
+                    <p>2021 - 2024 | Remote</p>
+                    <p>
+                        <small>
+                            <strong>Key Responsibilities:</strong> Designing and implementing data pipelines; developing
+                            and
+                            integrating
+                            comprehensive web applications.
+                        </small>
+                    </p>
+                    <p>
+                        <small>
+                            <strong>Additional Expertise:</strong> Skilled in automating and optimizing processes using
+                            no-code tools;
+                            experienced in developing HubSpot applications and workflows.
+                        </small>
+                    </p>
+                    <ul class="skills">
+                        <li>Svelte.js</li>
+                        <li>Django</li>
+                        <li>FastAPI</li>
+                        <li>Flask</li>
+                        <li>Javascript</li>
+                        <li>React.js</li>
+                        <li>Vue.js</li>
+                        <li>GCP Cloud Functions</li>
+                        <li>GCP Cloud Run</li>
+                        <li>Make</li>
+                        <li>Zapier</li>
+                        <li>Retool</li>
+                        <li>HubSpot Workflows and App Development</li>
+                    </ul>
+                </article>
+                <article class="experience">
+                    <h3>Full Stack Developer at Acquco</h3>
+                    <p>2022 - 2023 | Remote</p>
+                    <p>
+                        <small>
+                            <strong>Project Overview:</strong> Developed an interactive web platform for Amazon Seller
+                            Center to
+                            automate operations such as updating listings, controlling ad spend, buybox, and pricing.
+                        </small>
+                    </p>
+                    <p>
+                        <small>
+                            <strong>Technical Stack:</strong> Utilized Antd design library with React on the frontend
+                            and
+                            microservices
+                            architecture using Django and FastAPI on the backend.
+                        </small>
+                    </p>
+                    <p>
+                        <small>
+                            <strong>Key Achievement:</strong> Optimized the platform, reducing response times to under 5
+                            seconds for the
+                            most frequently used endpoints.
+                        </small>
+                    </p>
+                    <ul class="skills">
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>FastAPI</li>
+                        <li>Pydantic</li>
+                        <li>Pandas</li>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>Numpy</li>
+                        <li>Redis</li>
+                        <li>Elasticsearch</li>
+                        <li>Node.js</li>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </article>
+                <article class="experience">
+                    <h3>Full Stack Developer at FiveRivers Technologies</h3>
+                    <p>2015 - 2018 | Lahore, Pakistan</p>
+                    <p>
+                        <small>
+                            <strong>Project Overview:</strong> Developed a data-driven platform for analyzing
+                            electricity
+                            generator logs
+                            to schedule maintenance without downtime, deployed for a leading electricity producer in the
+                            USA.
+                        </small>
+                    </p>
+                    <p>
+                        <small>
+                            <strong>Technical Stack:</strong> Implemented scalable data processing pipelines using
+                            Hadoop,
+                            Hive, and
+                            Kafka. Integrated with OSI PI system using C# and Python SDKs.
+                        </small>
+                    </p>
+                    <p>
+                        <small>
+                            <strong>Additional Technologies:</strong> Worked on applications using Django, Angular,
+                            React,
+                            jQuery, and
+                            PHP frameworks like CodeIgniter.
+                        </small>
+                    </p>
+                    <ul class="skills">
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>React</li>
+                        <li>Angular</li>
+                        <li>jQuery</li>
+                        <li>PHP</li>
+                        <li>CodeIgniter</li>
+                        <li>C#</li>
+                        <li>Hadoop</li>
+                        <li>Hive</li>
+                        <li>Kafka</li>
+                        <li>Luigi</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+
+        <hr class="dashed screen">
+
+        <section class="techstack-section" id="projects">
             <h2>Technology Stack</h2>
             <ul>
                 <li>
@@ -256,169 +457,45 @@
                 </li>
             </ul>
         </section>
-    </div>
-    <div class="right-column">
-        <section id="experience">
-            <h2><small style="font-size: 12pt">Experience</small></h2>
-            <article class="experience">
-                <h3>Full Stack Developer at Arbisoft</h3>
-                <p>2018 - Present | Lahore, Pakistan</p>
-                <p>
-                    <small>
-                        As a <strong>Full-Stack Developer</strong> at <em>Arbisoft</em>, I am committed to accurately
-                        fulfilling
-                        client requests by developing and delivering robust solutions across a diverse technology stack.
-                        My
-                        expertise
-                        spans multiple programming languages including <strong>Python, JavaScript, TypeScript, and
-                        Go</strong>,
-                        enabling me to build scalable and efficient applications.
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        I have extensive experience with a variety of frameworks such as <strong>Django, Flask, FastAPI,
-                        and
-                        Express.js</strong>, which allows me to adapt to different project requirements effectively. My
-                        role
-                        involves
-                        leveraging these technologies to create high-quality software that meets the dynamic needs of
-                        our clients,
-                        ensuring optimal performance and user experience.
-                    </small>
-                </p>
-                <ul class="skills">
-                    <li>Python</li>
-                    <li>Openedx</li>
-                    <li>Django</li>
-                    <li>Flask</li>
-                    <li>FastApi</li>
-                    <li>Pandas</li>
-                    <li>Numpy</li>
-                    <li>Sci-Kit Learn</li>
-                    <li>React</li>
-                    <li>Javascript</li>
-                    <li>Node.js</li>
-                    <li>MySql</li>
-                    <li>Postgresql</li>
-                    <li>MongoDB</li>
-                    <li>Redis</li>
-                </ul>
-            </article>
-            <article class="experience">
-                <h3>Full Stack Developer at Marketerhire</h3>
-                <p>2021 - 2024 | Remote</p>
-                <p>
-                    <small>
-                        <strong>Key Responsibilities:</strong> Designing and implementing data pipelines; developing and
-                        integrating
-                        comprehensive web applications.
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <strong>Additional Expertise:</strong> Skilled in automating and optimizing processes using
-                        no-code tools;
-                        experienced in developing HubSpot applications and workflows.
-                    </small>
-                </p>
-                <ul class="skills">
-                    <li>Svelte.js</li>
-                    <li>Django</li>
-                    <li>FastAPI</li>
-                    <li>Flask</li>
-                    <li>Javascript</li>
-                    <li>React.js</li>
-                    <li>Vue.js</li>
-                    <li>GCP Cloud Functions</li>
-                    <li>GCP Cloud Run</li>
-                    <li>Make</li>
-                    <li>Zapier</li>
-                    <li>Retool</li>
-                    <li>HubSpot Workflows and App Development</li>
-                </ul>
-            </article>
-            <article class="experience">
-                <h3>Full Stack Developer at Acquco</h3>
-                <p>2022 - 2023 | Remote</p>
-                <p>
-                    <small>
-                        <strong>Project Overview:</strong> Developed an interactive web platform for Amazon Seller
-                        Center to
-                        automate operations such as updating listings, controlling ad spend, buybox, and pricing.
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <strong>Technical Stack:</strong> Utilized Antd design library with React on the frontend and
-                        microservices
-                        architecture using Django and FastAPI on the backend.
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <strong>Key Achievement:</strong> Optimized the platform, reducing response times to under 5
-                        seconds for the
-                        most frequently used endpoints.
-                    </small>
-                </p>
-                <ul class="skills">
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>FastAPI</li>
-                    <li>Pydantic</li>
-                    <li>Pandas</li>
-                    <li>MySQL</li>
-                    <li>PostgreSQL</li>
-                    <li>Numpy</li>
-                    <li>Redis</li>
-                    <li>Elasticsearch</li>
-                    <li>Node.js</li>
-                    <li>React</li>
-                    <li>TypeScript</li>
-                    <li>JavaScript</li>
-                </ul>
-            </article>
-            <article class="experience">
-                <h3>Full Stack Developer at FiveRivers Technologies</h3>
-                <p>2015 - 2018 | Lahore, Pakistan</p>
-                <p>
-                    <small>
-                        <strong>Project Overview:</strong> Developed a data-driven platform for analyzing electricity
-                        generator logs
-                        to schedule maintenance without downtime, deployed for a leading electricity producer in the
-                        USA.
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <strong>Technical Stack:</strong> Implemented scalable data processing pipelines using Hadoop,
-                        Hive, and
-                        Kafka. Integrated with OSI PI system using C# and Python SDKs.
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <strong>Additional Technologies:</strong> Worked on applications using Django, Angular, React,
-                        jQuery, and
-                        PHP frameworks like CodeIgniter.
-                    </small>
-                </p>
-                <ul class="skills">
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>React</li>
-                    <li>Angular</li>
-                    <li>jQuery</li>
-                    <li>PHP</li>
-                    <li>CodeIgniter</li>
-                    <li>C#</li>
-                    <li>Hadoop</li>
-                    <li>Hive</li>
-                    <li>Kafka</li>
-                    <li>Luigi</li>
-                </ul>
-            </article>
+        <section class="contact-other-platform">
+            <h3 id="find-me-elsewhere-">Find me elsewhere 🌎<a class="anchorjs-link " href="#find-me-elsewhere-"
+                                                              aria-label="Anchor" data-anchorjs-icon=""
+                                                              style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+            </h3>
+            <table style="width: 100%">
+                <tbody>
+                <tr>
+                    <td style="border: 0">
+                        <a href="https://www.linkedin.com/in/qasimkhokhar" target="_blank">
+                            <img
+                                    src="https://img.shields.io/badge/qasim_gulzar-black?&amp;style=for-the-badge&amp;logo=linkedin&amp;logoColor=white"
+                                    alt="LinkedIn" style="margin-bottom: 5px;">
+                        </a>
+                    </td>
+                    <td style="border: 0">
+                        <a href="https://github.com/qasimgulzar?tab=repositories" target="_blank">
+                            <img
+                                    src="https://img.shields.io/badge/qasim_gulzar-black?&amp;style=for-the-badge&amp;logo=github&amp;logoColor=white"
+                                    alt="Github" style="margin-bottom: 5px;">
+                        </a>
+                    </td>
+                    <td style="border: 0">
+                        <a href="https://matching.turing.com/developer-resume-preview/7784d950d1dfd8cd4dfd356b8bc3d206bbe73470c421">
+                            <img
+                                    src="https://img.shields.io/badge/qasim_gulzar-black?&amp;style=for-the-badge&amp;logo=freelancer&amp;logoColor=white"
+                                    alt="Turing" style="margin-bottom: 5px;">
+                        </a>
+                    </td>
+                    <td style="border: 0">
+                        <a href="mailto:qasim.khokhar52@gmail.com">
+                            <img
+                                    src="https://img.shields.io/badge/qasim_gulzar-black?&amp;style=for-the-badge&amp;logo=gmail&amp;logoColor=white"
+                                    alt="Email" style="margin-bottom: 5px;">
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </section>
     </div>
 </div>
