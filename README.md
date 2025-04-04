@@ -1,6 +1,6 @@
 ### Hey, I'm Qasim! 👋
 
-👨‍💻 Sr. Staff Engineer at [@Arbisoft](https://github.com/arbisoft/)  
+👨‍💻 Sr. Software Engineer at [@Primzel](https://github.com/primzel)  
 🇵🇰 Living in Lahore, Pakistan.
 
 ## Summary
@@ -24,7 +24,8 @@ At Arbisoft, I've been instrumental in developing robust software solutions. My 
 Engineer, where I honed my skills in full-stack development using technologies like Node.js and React.js. I've since
 progressed to the role of Principal Software Engineer.
 
-🔑 Key Skills: Python, Java, JavaScript, Django, Spring, React.js, PostgreSQL, Leadership, Software Architecture
+🔑 Key Skills: Python, GoLang, Java, JavaScript, Django, Spring, React.js, PostgreSQL, MySQL, Leadership, Software
+Architecture
 
 My experiences have shaped me into a dynamic problem solver and a leader in software engineering. I'm always eager to
 connect with fellow professionals and explore opportunities for collaboration. Let's connect and explore how we can
@@ -55,6 +56,7 @@ create value together!
   ![Solidity](https://img.shields.io/badge/Solidity-F7DF1E?logo=solidity&logoColor=black)
   ![Php](https://img.shields.io/badge/Php-F7DF1E?logo=php&logoColor=black)
   ![Web3](https://img.shields.io/badge/Web3-F7DF1E?logo=web3&logoColor=black)
+  ![GoLang](https://img.shields.io/badge/GoLang-F7DF1E?logo=go&logoColor=black)
 
 - Web Frameworks:
   ![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white)
@@ -84,30 +86,18 @@ create value together!
 
 ### Find me elsewhere 🌎
 
-<table style="width: 100%">
-<tr>
-<td style="border: 0">
 <a href="https://www.linkedin.com/in/qasimkhokhar" target="_blank">
-  <img src="https://img.shields.io/badge/qasim_gulzar-black?&style=for-the-badge&logo=linkedin&logoColor=white" alt=LinkedIn style="margin-bottom: 5px;" />
+  <img src=https://img.shields.io/badge/qasim_gulzar-black?&style=for-the-badge&logo=linkedin&logoColor=white alt=LinkedIn style="margin-bottom: 5px;" />
 </a>
-</td>
-<td style="border: 0">
+
 <a href="https://github.com/qasimgulzar?tab=repositories" target="_blank">
-  <img src="https://img.shields.io/badge/qasim_gulzar-black?&style=for-the-badge&logo=github&logoColor=white" alt=Github style="margin-bottom: 5px;" />
+  <img src=https://img.shields.io/badge/qasim_gulzar-black?&style=for-the-badge&logo=github&logoColor=white alt=Github style="margin-bottom: 5px;" />
 </a>
-</td>
-<td style="border: 0">
+
 <a href="https://matching.turing.com/developer-resume-preview/7784d950d1dfd8cd4dfd356b8bc3d206bbe73470c421">
   <img src="https://img.shields.io/badge/qasim_gulzar-black?&style=for-the-badge&logo=freelancer&logoColor=white" alt=Turing style="margin-bottom: 5px;" />
 </a>
-</td>
-<td style="border: 0">
+
 <a href="mailto:qasim.khokhar52@gmail.com">
-  <img src="https://img.shields.io/badge/qasim_gulzar-black?&style=for-the-badge&logo=gmail&logoColor=white" alt=Email style="margin-bottom: 5px;" />
+  <img src=https://img.shields.io/badge/qasim_gulzar-black?&style=for-the-badge&logo=gmail&logoColor=white alt=Email style="margin-bottom: 5px;" />
 </a>
-</td>
-</tr>
-</table>
-
-
-
